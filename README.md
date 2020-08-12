@@ -7,11 +7,8 @@ and click sk.exe. The program will delete the following files.
 
 > Resitem
   All except GroundItem and MHItem
->>
-
-Reshcar
-Common
-
+  Reshcar
+  Common
   Reseffect
   ItemEffect(s)
   Dmg_GTI_Bomb
@@ -48,3 +45,4 @@ Common
   BurnPainMe
   KazhulEffect01
   KazhulEffect02
+
