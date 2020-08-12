@@ -8,6 +8,7 @@ and click sk.exe. The program will delete the following files.
 Files/Fodler inside Resitem (Folder)
 
 > Male (Folder)
+
 > Femal (Folder)
 
 Files/Folder inside Reschar (Folder)
