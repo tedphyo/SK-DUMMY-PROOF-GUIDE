@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using System.Runtime.InteropServices;
 
 namespace Delete_Cusom_File
 {
@@ -20,43 +20,55 @@ namespace Delete_Cusom_File
             var maleFolderInsideResitem = Environment.CurrentDirectory + @"\resitem\Male";
             var commonFolderInsideReschar = Environment.CurrentDirectory + @"\reschar\Common";
 
-            // delete files inside reseffect folder
-            for (int i = 0; i < reseffectFiles.Length; i++)
+            var currentFolder = Environment.CurrentDirectory;
+
+
+            try
             {
-                string[] filesInReseffectFolder = Directory.GetFiles(reseffectFolder, reseffectFiles[i]);
-                foreach (string file in filesInReseffectFolder)
+                // delete files inside reseffect folder
+                for (int i = 0; i < reseffectFiles.Length; i++)
+                {
+                    string[] filesInReseffectFolder = Directory.GetFiles(reseffectFolder, reseffectFiles[i]);
+                    foreach (string file in filesInReseffectFolder)
+                    {
+                        File.Delete(file);
+                        Console.WriteLine(file + " has been deleted!");
+                    }
+                }
+
+
+                // delete itemeeffect.nif files inside resefffect
+                foreach (string file in Directory.GetFiles(reseffectFolder, itemEffectInsdeReseffectFolder))
                 {
                     File.Delete(file);
                     Console.WriteLine(file + " has been deleted!");
                 }
-            }
+
+                // delete resitem/male, resitem/female, reschar/common folder
+                while (Directory.Exists(commonFolderInsideReschar) || Directory.Exists(maleFolderInsideResitem) || Directory.Exists(femaleFolderInsideResitem))
+                {
+                    Directory.Delete(femaleFolderInsideResitem, true);
+                    Directory.Delete(maleFolderInsideResitem, true);
+                    Directory.Delete(commonFolderInsideReschar, true);
+                    Console.WriteLine(femaleFolderInsideResitem + " folder has been deleted!");
+                    Console.WriteLine(maleFolderInsideResitem + " folder has been deleted!");
+                    Console.WriteLine(commonFolderInsideReschar + " folder has been deleted!");
+                }
 
 
-            // delete itemeeffect.nif files inside resefffect
-            foreach (string file in Directory.GetFiles(reseffectFolder, itemEffectInsdeReseffectFolder))
+                // delete files insde resitem folder
+                foreach (string file in Directory.GetFiles(resitemFolder))
+                {
+                    File.Delete(file);
+                    Console.WriteLine(file + " has been deleted!");
+                }
+            } 
+            catch
             {
-                File.Delete(file);
-                Console.WriteLine(file + " has been deleted!");
+                Console.WriteLine("You are in " + currentFolder + " Folder!");
+                Console.WriteLine("Place the sk.exe program inside FiestaOnline main folder!");
             }
 
-            // delete resitem/male, resitem/female, reschar/common folder
-            while (Directory.Exists(commonFolderInsideReschar) || Directory.Exists(maleFolderInsideResitem) || Directory.Exists(femaleFolderInsideResitem))
-            {
-                Directory.Delete(femaleFolderInsideResitem, true);
-                Directory.Delete(maleFolderInsideResitem, true);
-                Directory.Delete(commonFolderInsideReschar, true);
-                Console.WriteLine(femaleFolderInsideResitem + " folder has been deleted!");
-                Console.WriteLine(maleFolderInsideResitem + " folder has been deleted!");
-                Console.WriteLine(commonFolderInsideReschar + " folder has been deleted!");
-            }
-
-
-            // delete files insde resitem folder
-            foreach (string file in Directory.GetFiles(resitemFolder))
-            {
-                File.Delete(file);
-                Console.WriteLine(file + " has been deleted!");
-            }
 
 
             Console.ReadKey();
