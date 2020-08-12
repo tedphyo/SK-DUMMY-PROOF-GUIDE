@@ -1,4 +1,4 @@
-<center><img src="https://raw.githubusercontent.com/tedphyo/SK-DUMMY-PROOF-GUIDE/master/Delete%20Cusom%20Files/icon.ico"></center>
+<center><img src="https://raw.githubusercontent.com/tedphyo/SK-DUMMY-PROOF-GUIDE/master/Delete%20Cusom%20Files/icon.ico" alt="sk raid image"/></center>
 
 # How-To
 Place the sk.exe within fiesta main folder. 
