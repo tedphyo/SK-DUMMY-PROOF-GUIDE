@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK", "Delete Cusom Files\SK.csproj", "{6CAF0AEB-A776-47AE-BDAD-404AD1CC1508}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skRAID", "Delete Cusom Files\skRAID.csproj", "{6CAF0AEB-A776-47AE-BDAD-404AD1CC1508}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
