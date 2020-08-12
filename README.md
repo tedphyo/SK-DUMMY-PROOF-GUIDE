@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/tedphyo/SK-DUMMY-PROOF-GUIDE/master/skRaid/icon.ico" alt="sk raid image"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/tedphyo/skRaid/master/skRaid/icon.ico" alt="sk raid image"></p>
 
 # How-To
 Place the sk.exe within fiesta main folder. 
