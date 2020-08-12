@@ -1,6 +1,8 @@
 # How-To
 Place the sk.exe within fiesta main folder. 
+
 > C:\Program Files (x86)\gamingo\FiestaOnline
+
 and click sk.exe. The program will delete the following files.
 
 -Resitem
