@@ -5,15 +5,17 @@ Place the sk.exe within fiesta main folder.
 
 and click sk.exe. The program will delete the following files.
 
-> Resitem
-> All except GroundItem and MHItem
-> Reshcar
-> Common
-> Reseffect
-> ItemEffect(s)
+Files/Fodler inside Resitem (Folder)
 
-Files inside Reseffect(Folder)
+> Male (Folder)
+> Femal (Folder)
 
+Files/Folder inside Reschar (Folder)
+
+> Common (Folder)
+
+Files inside Reseffect (Folder)
+> itemeeffect.nif (All .nif)
 > Dmg_GTI_Bomb
 > BurnPain
 > BurnPainDmg
