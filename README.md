@@ -6,19 +6,12 @@ Place the sk.exe within fiesta main folder.
 and click sk.exe. The program will delete the following files.
 
 > Resitem
-
 > All except GroundItem and MHItem
-
 > Reshcar
-
 > Common
-
 > Reseffect
-
 > ItemEffect(s)
-
 > Dmg_GTI_Bomb
-
 > BurnPain
 > BurnPainDmg
 > StaBurnPainLoop
