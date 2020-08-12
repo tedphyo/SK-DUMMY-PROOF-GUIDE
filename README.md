@@ -11,6 +11,9 @@ and click sk.exe. The program will delete the following files.
 > Common
 > Reseffect
 > ItemEffect(s)
+
+Files inside Reseffect(Folder)
+
 > Dmg_GTI_Bomb
 > BurnPain
 > BurnPainDmg
